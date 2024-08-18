@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>Student Registration</h1>
+        <hr>
+        <p>Please fill out the form below to register as a student</p>
+    </header>
+    <main>
+        <form action="">
+            <div>
+                <label for="fullname">Full Name</label>
+                <input type="text" name="fullname" id="fullname" placeholder="fullname" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="sample@gmail.com" required>
+            </div>
+            <div>
+                <label for="dob">Date Of Birth</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+            <div>
+                <label for="phnumber">Phone Number</label>
+                <select name="phnumber-isd">
+                    <option value="+91">+91</option>
+                    <option value="+02">+02</option>
+                    <option value="+13">+13</option>
+                </select>
+                <input type="tel" name="phnumber" id="phnumber">
+            </div>
+            <div>
+                <label for="gender">gender</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other">Other</label>
+            </div>
+            <div>
+                <label for="">Courses Interested</label>   
+                <label for="html">HTML</label>
+                <input type="checkbox" name="html" id="html">             
+                <label for="css">CSS</label>
+                <input type="checkbox" name="css" id="css">             
+                <label for="javascript">Javascript</label>
+                <input type="checkbox" name="javascript" id="javascript">             
+                <label for="python">Python</label>
+                <input type="checkbox" name="python" id="python">             
+            </div>
+            <div>
+                <label for="comment">Comments</label>
+                <textarea name="comment" id="comment">Welcome...</textarea>
+            </div>
+            <div>
+                <button type="submit">Register</button>
+            </div>
+        </form>
+
+        <!-- create registered student table -->
+         <h1>Registested Student</h1>
+         <hr>
+         <table border="1">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Date of Birth</th>
+                    <th>Phone Number</th>
+                    <th>Gender</th>
+                    <th>Courses Interested</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Krishnan</td>
+                    <td>Krishnan@gmail.com</td>
+                    <td>15-03-2002</td>
+                    <td>+91 78696 54675</td>
+                    <td>Male</td>
+                    <td>Javascript,Python</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>David</td>
+                    <td>david@gmail.com</td>
+                    <td>03-03-2003</td>
+                    <td>+91 98767 32412</td>
+                    <td>Male</td>
+                    <td>HTML,CSS,Javascript</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Abdul</td>
+                    <td>Abdul@gmail.com</td>
+                    <td>08-07-2001</td>
+                    <td>+91 89675 56485</td>
+                    <td>Male</td>
+                    <td>HTML,Javascript,Python</td>
+                </tr>
+            </tbody>
+         </table>
+    </main>
+</body>
+</html>
